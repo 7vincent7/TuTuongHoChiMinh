@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tư tưởng Hồ Chí Minh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .author {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* ===== MỤC LỚN ===== */
+        .main-btn {
+            width: 100%;
+            padding: 14px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            background: #6c63ff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: left;
+        }
+
+        .main-content {
+            display: none;
+            padding: 15px;
+            border-left: 4px solid #6c63ff;
+            margin-bottom: 10px;
+        }
+
+        /* ===== MỤC NHỎ ===== */
+        .sub-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 6px;
+            background: #f0f0f0;
+            cursor: pointer;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .sub-content {
+            display: none;
+            padding: 10px 15px;
+            margin-left: 15px;
+            border-left: 3px solid #ccc;
+        }
+
+        /* ===== MỤC RẤT NHỎ (CHI TIẾT) ===== */
+        .detail {
+            margin-top: 8px;
+            padding: 10px;
+            background: #fafafa;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>📚 Tư tưởng Hồ Chí Minh</h2>
+    <div class="author">Tác giả: <strong>2/ Nguyễn Đình Linh</strong></div>
+
+    <!-- ===== MỤC 1 ===== -->
+   <button class="main-btn" onclick="toggle('main1')">▶ Mục 1. Chủ tịch Hồ Chí Minh</button>
+<div id="main1" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub1-1')">➤ Mục 1.1. Thông tin cơ bản</button>
+    <div id="sub1-1" class="sub-content">
+        <div class="detail">
+            Chủ tịch Hồ Chí Minh tên khai sinh là Nguyễn Sinh Cung, sinh ngày 19 tháng 5 năm 1890 tại làng Kim Liên, huyện Nam Đàn, tỉnh Nghệ An.
+            Trong quá trình hoạt động cách mạng, Người sử dụng nhiều tên gọi khác nhau như Nguyễn Tất Thành, Nguyễn Ái Quốc.
+            Người mất ngày 2 tháng 9 năm 1969 tại Hà Nội.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-2')">➤ Mục 1.2. Thời niên thiếu và quá trình học tập</button>
+    <div id="sub1-2" class="sub-content">
+        <div class="detail">
+            Hồ Chí Minh sinh ra trong một gia đình nhà nho yêu nước.
+            Ngay từ nhỏ, Người đã sớm tiếp thu truyền thống yêu nước, tinh thần hiếu học và ý chí vươn lên.
+            Người từng học tập tại Huế, sau đó dạy học ở Phan Thiết và làm nhiều nghề khác nhau trước khi ra đi tìm đường cứu nước.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-3')">➤ Mục 1.3. Hành trình tìm đường cứu nước</button>
+    <div id="sub1-3" class="sub-content">
+        <div class="detail">
+            Năm 1911, Hồ Chí Minh rời Tổ quốc ra đi tìm con đường giải phóng dân tộc.
+            Trong hơn 30 năm hoạt động ở nước ngoài, Người đã đi qua nhiều quốc gia, vừa lao động, vừa học tập và tham gia các phong trào cách mạng.
+            Qua thực tiễn đấu tranh, Người tiếp cận và tiếp thu chủ nghĩa Mác – Lênin, xác định con đường cách mạng vô sản cho Việt Nam.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-4')">➤ Mục 1.4. Thành lập Đảng Cộng sản Việt Nam</button>
+    <div id="sub1-4" class="sub-content">
+        <div class="detail">
+            Ngày 3 tháng 2 năm 1930, Hồ Chí Minh chủ trì hội nghị hợp nhất các tổ chức cộng sản, thành lập Đảng Cộng sản Việt Nam.
+            Sự ra đời của Đảng đã chấm dứt tình trạng khủng hoảng về đường lối và tổ chức lãnh đạo cách mạng Việt Nam.
+            Đây là bước ngoặt có ý nghĩa quyết định đối với sự nghiệp giải phóng dân tộc.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-5')">➤ Mục 1.5. Lãnh đạo Cách mạng Tháng Tám và lập nước</button>
+    <div id="sub1-5" class="sub-content">
+        <div class="detail">
+            Năm 1945, Hồ Chí Minh lãnh đạo toàn dân tiến hành Cách mạng Tháng Tám, giành chính quyền trên phạm vi cả nước.
+            Ngày 2 tháng 9 năm 1945, Người đọc Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa.
+            Từ đây, nhân dân Việt Nam bước vào kỷ nguyên độc lập, tự do.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-6')">➤ Mục 1.6. Lãnh đạo sự nghiệp kháng chiến và xây dựng đất nước</button>
+    <div id="sub1-6" class="sub-content">
+        <div class="detail">
+            Trong suốt cuộc kháng chiến chống thực dân Pháp và đế quốc Mỹ, Hồ Chí Minh giữ vai trò lãnh đạo tối cao của Đảng và Nhà nước.
+            Người đề ra đường lối kháng chiến toàn dân, toàn diện, lâu dài và dựa vào sức mình là chính.
+            Đồng thời, Người luôn quan tâm xây dựng Nhà nước của dân, do dân và vì dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub1-7')">➤ Mục 1.7. Tư tưởng và di sản</button>
+    <div id="sub1-7" class="sub-content">
+        <div class="detail">
+            Tư tưởng Hồ Chí Minh là hệ thống quan điểm toàn diện về cách mạng Việt Nam,
+            bao gồm tư tưởng về độc lập dân tộc gắn liền với chủ nghĩa xã hội, về Đảng, Nhà nước, đạo đức và con người.
+            Di sản của Người để lại có giá trị to lớn và bền vững, là nền tảng tư tưởng, kim chỉ nam cho sự nghiệp cách mạng Việt Nam.
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- ===== MỤC 2 ===== -->
+<button class="main-btn" onclick="toggle('main2')">▶ Mục 2. Tư tưởng Hồ Chí Minh</button>
+<div id="main2" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub2-1')">➤ Mục 2.1. Khái niệm và bản chất</button>
+    <div id="sub2-1" class="sub-content">
+        <div class="detail">
+            Tư tưởng Hồ Chí Minh là một hệ thống quan điểm toàn diện và sâu sắc về những vấn đề cơ bản của cách mạng Việt Nam.
+            Đó là sự vận dụng và phát triển sáng tạo chủ nghĩa Mác-Lênin vào điều kiện cụ thể của Việt Nam,
+            đồng thời tiếp thu tinh hoa văn hóa dân tộc và văn minh nhân loại.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-2')">➤ Mục 2.2. Tư tưởng về mục tiêu giải phóng</button>
+    <div id="sub2-2" class="sub-content">
+        <div class="detail">
+            Hồ Chí Minh nhấn mạnh mục tiêu cao nhất của cách mạng là giải phóng dân tộc, giải phóng giai cấp và giải phóng con người.
+            Người cho rằng mục tiêu này phải gắn liền với quyền tự do, độc lập và hạnh phúc cho nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-3')">➤ Mục 2.3. Độc lập dân tộc gắn với chủ nghĩa xã hội</button>
+    <div id="sub2-3" class="sub-content">
+        <div class="detail">
+            Quan điểm của Hồ Chí Minh là độc lập dân tộc là điều kiện tiên quyết cho mọi phát triển,
+            nhưng độc lập phải gắn liền với chủ nghĩa xã hội để đem lại cuộc sống ấm no, tự do và hạnh phúc cho nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-4')">➤ Mục 2.4. Sức mạnh của nhân dân và đại đoàn kết</button>
+    <div id="sub2-4" class="sub-content">
+        <div class="detail">
+            Người đề cao vai trò của nhân dân trong mọi hoạt động cách mạng, khẳng định sức mạnh to lớn của khối đại đoàn kết toàn dân tộc là nhân tố quyết định thắng lợi của cách mạng.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-5')">➤ Mục 2.5. Quyền làm chủ của nhân dân và Nhà nước của dân</button>
+    <div id='sub2-5' class='sub-content'>
+        <div class='detail'>
+            Hồ Chí Minh cho rằng nhân dân phải làm chủ xã hội, xây dựng Nhà nước thật sự của dân, do dân và vì dân.
+            Mọi quyền lực thuộc về nhân dân và hoạt động của Nhà nước phải phục vụ lợi ích của nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-6')">➤ Mục 2.6. Quốc phòng toàn dân và xây dựng lực lượng vũ trang</button>
+    <div id='sub2-6' class='sub-content'>
+        <div class='detail'>
+            Người nhấn mạnh xây dựng quốc phòng toàn dân, với mọi người tham gia bảo vệ Tổ quốc là nhiệm vụ quan trọng.
+            Lực lượng vũ trang nhân dân phải vững mạnh, gắn chặt với nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-7')">➤ Mục 2.7. Phát triển kinh tế, văn hóa, nâng cao đời sống</button>
+    <div id='sub2-7' class='sub-content'>
+        <div class='detail'>
+            Tư tưởng Hồ Chí Minh nhấn mạnh phát triển kinh tế và văn hóa là nền tảng để nâng cao đời sống vật chất và tinh thần của nhân dân,
+            làm cho dân giàu, nước mạnh, xã hội văn minh.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-8')">➤ Mục 2.8. Đạo đức cách mạng và phong cách sống</button>
+    <div id='sub2-8' class='sub-content'>
+        <div class='detail'>
+            Hồ Chí Minh đề cao đạo đức cách mạng, nhất là các đức tính cần, kiệm, liêm, chính, chí công vô tư,
+            coi đó là những chuẩn mực quan trọng trong hoạt động của cán bộ và nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-9')">➤ Mục 2.9. Bồi dưỡng thế hệ cách mạng tương lai</button>
+    <div id='sub2-9' class='sub-content'>
+        <div class='detail'>
+            Người chú trọng chăm lo đào tạo, bồi dưỡng thế hệ cách mạng cho đời sau,
+            nhằm đảm bảo sự truyền thừa lý tưởng, trí tuệ và đạo đức cho các thế hệ kế tiếp.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub2-10')">➤ Mục 2.10. Xây dựng Đảng trong sạch, vững mạnh</button>
+    <div id='sub2-10' class='sub-content'>
+        <div class='detail'>
+            Hồ Chí Minh coi trọng xây dựng Đảng Cộng sản Việt Nam trong sạch, vững mạnh,
+            với cán bộ, đảng viên vừa là người lãnh đạo, vừa là người phục vụ thật sự trung thành với nhân dân.
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- ===== MỤC 3 ===== -->
+<button class="main-btn" onclick="toggle('main3')">▶ Mục 3. Nội dung cơ bản của Tư tưởng Hồ Chí Minh</button>
+<div id="main3" class="main-content">
+
+    <button class="sub-btn" onclick="toggle('sub3-1')">➤ Mục 3.1. Tư tưởng về giải phóng dân tộc</button>
+    <div id="sub3-1" class="sub-content">
+        <div class="detail">
+            Hồ Chí Minh khẳng định con đường giải phóng dân tộc phải gắn liền với cách mạng vô sản. Độc lập dân tộc là điều kiện tiên quyết để nhân dân có tự do và hạnh phúc. Cách mạng giải phóng dân tộc phải do nhân dân tiến hành và có thể giành thắng lợi trước cách mạng vô sản ở chính quốc.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-2')">➤ Mục 3.2. Tư tưởng về chủ nghĩa xã hội và con đường đi lên chủ nghĩa xã hội</button>
+    <div id="sub3-2" class="sub-content">
+        <div class="detail">
+            Chủ nghĩa xã hội được xác định là mục tiêu và lý tưởng của cách mạng Việt Nam. Đó là một xã hội trong đó nhân dân lao động làm chủ, kinh tế phát triển cao, đời sống vật chất và tinh thần không ngừng được nâng cao, xã hội công bằng và không còn áp bức bóc lột.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-3')">➤ Mục 3.3. Tư tưởng về đại đoàn kết toàn dân tộc</button>
+    <div id="sub3-3" class="sub-content">
+        <div class="detail">
+            Đại đoàn kết dân tộc là chiến lược lâu dài và là nguồn sức mạnh quyết định thắng lợi của cách mạng. Hồ Chí Minh chủ trương tập hợp mọi lực lượng yêu nước, không phân biệt giai cấp, tôn giáo hay dân tộc, nhằm tạo nên khối đoàn kết vững chắc.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-4')">➤ Mục 3.4. Tư tưởng về quyền làm chủ của nhân dân và xây dựng Nhà nước của dân, do dân, vì dân</button>
+    <div id="sub3-4" class="sub-content">
+        <div class="detail">
+            Nhà nước phải phục vụ lợi ích của nhân dân, mọi quyền lực đều thuộc về nhân dân. Cán bộ, công chức là “công bộc” của dân, phải gần dân, hiểu dân và chịu sự giám sát của nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-5')">➤ Mục 3.5. Tư tưởng về đạo đức cách mạng</button>
+    <div id="sub3-5" class="sub-content">
+        <div class="detail">
+            Hồ Chí Minh nhấn mạnh các phẩm chất đạo đức như cần, kiệm, liêm, chính, chí công vô tư. Đạo đức là nền tảng của người cách mạng và phải được rèn luyện suốt đời.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-6')">➤ Mục 3.6. Tư tưởng về xây dựng Đảng Cộng sản</button>
+    <div id="sub3-6" class="sub-content">
+        <div class="detail">
+            Đảng Cộng sản là lực lượng lãnh đạo cách mạng. Đảng phải trong sạch, vững mạnh cả về chính trị, tư tưởng và tổ chức; thường xuyên tự chỉnh đốn, gắn bó mật thiết với nhân dân.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub3-7')">➤ Mục 3.7. Tư tưởng về đoàn kết quốc tế</button>
+    <div id="sub3-7" class="sub-content">
+        <div class="detail">
+            Cách mạng Việt Nam là một bộ phận của cách mạng thế giới. Vì vậy cần kết hợp sức mạnh dân tộc với sức mạnh thời đại, tăng cường hợp tác và hữu nghị với các dân tộc vì hòa bình, độc lập và phát triển.
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- ===== MỤC 4 ===== -->
+<button class="main-btn" onclick="toggle('main4')">▶ Mục 4. Giá trị, ý nghĩa thời đại của Chủ nghĩa Mác-Lênin, Tư tưởng Hồ Chí Minh</button> 
+<div id="main4" class="main-content"> 
+
+    <button class="sub-btn" onclick="toggle('sub4-1')">➤ Mục 4.1. Giá trị lý luận và nền tảng tư tưởng</button> 
+    <div id="sub4-1" class="sub-content"> 
+        <div class="detail">
+            Chủ nghĩa Mác–Lênin và tư tưởng Hồ Chí Minh được xác định là nền tảng tư tưởng, kim chỉ nam cho hành động của Đảng Cộng sản Việt Nam. Đây là hệ thống lý luận khoa học và cách mạng, cung cấp thế giới quan và phương pháp luận giúp nhận thức đúng quy luật vận động của xã hội, từ đó định hướng con đường phát triển phù hợp.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub4-2')">➤ Mục 4.2. Giá trị thực tiễn trong cách mạng Việt Nam</button> 
+    <div id="sub4-2" class="sub-content"> 
+        <div class="detail">
+            Thực tiễn lịch sử cho thấy việc vận dụng sáng tạo chủ nghĩa Mác–Lênin và tư tưởng Hồ Chí Minh đã góp phần quan trọng vào thắng lợi của cách mạng Việt Nam, từ đấu tranh giành độc lập dân tộc đến xây dựng và bảo vệ Tổ quốc. Những thành tựu đó được xem là minh chứng cho sức sống và giá trị không thể phủ nhận của hệ tư tưởng này.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub4-3')">➤ Mục 4.3. Định hướng phát triển đất nước hiện nay</button> 
+    <div id="sub4-3" class="sub-content"> 
+        <div class="detail">
+            Trong giai đoạn đổi mới và hội nhập quốc tế, việc kiên định và vận dụng linh hoạt chủ nghĩa Mác–Lênin, tư tưởng Hồ Chí Minh được nhấn mạnh nhằm bảo đảm ổn định chính trị, phát triển kinh tế, nâng cao đời sống nhân dân và giữ vững mục tiêu đi lên chủ nghĩa xã hội.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub4-4')">➤ Mục 4.4. Yêu cầu bảo vệ và phát triển nền tảng tư tưởng</button> 
+    <div id="sub4-4" class="sub-content"> 
+        <div class="detail">
+            Cần tăng cường nghiên cứu, học tập và vận dụng lý luận; đồng thời chủ động đấu tranh với các quan điểm sai trái, xuyên tạc. Việc bảo vệ nền tảng tư tưởng của Đảng được xem là nhiệm vụ quan trọng để giữ vững định hướng phát triển của đất nước.
+        </div>
+    </div>
+
+    <button class="sub-btn" onclick="toggle('sub4-5')">➤ Mục 4.5. Ý nghĩa lâu dài</button> 
+    <div id="sub4-5" class="sub-content"> 
+        <div class="detail">
+            Chủ nghĩa Mác–Lênin và tư tưởng Hồ Chí Minh không chỉ có giá trị trong quá khứ mà còn được khẳng định có ý nghĩa lâu dài đối với sự nghiệp xây dựng và bảo vệ Tổ quốc, đóng vai trò định hướng cho hiện tại và tương lai của cách mạng Việt Nam.
+        </div>
+    </div>
+
+</div>
+
+
+</div>
+
+<script>
+    function toggle(id) {
+        const el = document.getElementById(id);
+        el.style.display = (el.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>
